@@ -1,0 +1,20 @@
+Source: openmediavault-lvm2
+Section: net
+Priority: optional
+Maintainer: Bluecherry Maintainers <maintainers@bluecherrydvr.com>
+Build-Depends: debhelper (>= 8.0.0), gettext
+Standards-Version: 3.9.3
+Homepage: http://www.openmediavault.org
+Vcs-Svn: https://openmediavault.svn.sourceforge.net/svnroot/openmediavault
+Vcs-Browser: http://openmediavault.svn.sourceforge.net/viewvc/openmediavault/
+
+Package: openmediavault-lvm2
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, openmediavault (>= 0.4.7), lvm2
+Description: OpenMediaVault Logical Volume Manager (LVM2) plugin
+ LVM supports enterprise level volume management of disk and disk subsystems
+ by grouping arbitrary disks into volume groups. The total capacity of volume
+ groups can be allocated to logical volumes, which are accessed as regular
+ block devices.
+ .
+ This packages contains the LVM2 plugin for OpenMediaVault.

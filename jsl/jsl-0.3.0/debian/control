@@ -1,0 +1,21 @@
+Source: jsl
+Section: devel
+Priority: optional
+Maintainer: Bluecherry Maintainers <maintainers@bluecherrydvr.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: http://www.javascriptlint.com/
+Vcs-Svn: https://javascriptlint.svn.sourceforge.net/svnroot/javascriptlint
+Vcs-Browser: https://javascriptlint.svn.sourceforge.net/svnroot/javascriptlint
+
+Package: jsl
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: JavaScript code validator
+ JavaScript Lint is a development tool that validates JavaScript code for best
+ coding practices, finding common mistakes without actually running the script
+ or opening the web page. JavaScript Lint holds an advantage over competing
+ lints because it is based on the JavaScript engine for the Firefox browser.
+ This provides a robust framework that can not only check JavaScript syntax
+ but also examine the coding techniques used in the script and warn against
+ questionable practices.

@@ -1,0 +1,16 @@
+Source: php-json-schema
+Section: php
+Priority: optional
+Maintainer: Bluecherry Maintainers <maintainers@bluecherrydvr.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: http://code.google.com/p/json-schema-php/
+Vcs-Git: git://github.com/zoeey/json-schema-php.git
+Vcs-Browser: https://github.com/zoeey/json-schema-php
+
+Package: php-json-schema
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, php5-cgi | php5-cli
+Description: PHP implementation of the JSON schema
+ Validates a JSON string against a schema. The validation works as defined by
+ the schema proposal (see http://www.json-schema.org).

@@ -1,0 +1,13 @@
+Index: openmediavault-nut-0.4/usr/share/openmediavault/scripts/nut
+===================================================================
+--- openmediavault-nut-0.4.orig/usr/share/openmediavault/scripts/nut	2012-12-17 23:55:54.393767271 -0600
++++ openmediavault-nut-0.4/usr/share/openmediavault/scripts/nut	2012-12-18 01:02:43.941874643 -0600
+@@ -140,7 +140,7 @@
+ 
+ 	# Create '/etc/nut/upssched.conf'
+ 	cat <<EOF > ${OMV_NUT_UPSSCHED_CONFIG}
+-CMDSCRIPT /usr/local/bin/upssched-cmd
++CMDSCRIPT /usr/bin/upssched-cmd
+ PIPEFN /var/run/nut/upssched.pipe
+ LOCKFN /var/run/nut/upssched.lock
+ AT COMMOK * EXECUTE notify

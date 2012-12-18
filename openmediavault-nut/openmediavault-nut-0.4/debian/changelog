@@ -1,0 +1,21 @@
+openmediavault-nut (0.4-3) precise; urgency=low
+
+  * ubuntu_01_fix_usr_local_install_prefix.diff fixes script location because
+    you can't install to /usr/local in Debian/Ubuntu etc.
+  * debian/control: re-added ${shlibs:Depends} as that wasn't the main FTBFS
+    issue
+  * debian/rules: cleaned it up
+
+ -- Richard A. Johnson <nixternal@gmail.com>  Tue, 18 Dec 2012 01:03:35 -0600
+
+openmediavault-nut (0.4-2) precise; urgency=low
+
+  * debian/control: remove ${shlibs:Depends} to fix FTBFS
+
+ -- Richard A. Johnson <nixternal@gmail.com>  Tue, 18 Dec 2012 00:38:28 -0600
+
+openmediavault-nut (0.4-1) precise; urgency=low
+
+  * Initial release
+
+ -- Richard A. Johnson <nixternal@gmail.com>  Mon, 17 Dec 2012 23:56:23 -0600

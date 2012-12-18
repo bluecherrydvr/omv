@@ -1,0 +1,3 @@
+version=3
+http://pecl.php.net/package/auth-pam \
+  /get/auth-pam-([\d\.]*).tgz  debian  uupdate

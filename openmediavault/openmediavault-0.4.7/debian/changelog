@@ -1,0 +1,8 @@
+openmediavault (0.4.7-1) precise; urgency=low
+
+  * Initial release
+  * Patches:
+    - ubuntu_01_samba_to_smbd.diff - change init.d/samba references to
+    init.d/smbd. Fixes the 'invoke-rc.d: unknown initscript' install issue
+
+ -- Richard A. Johnson <nixternal@gmail.com>  Thu, 13 Dec 2012 13:47:56 -0600

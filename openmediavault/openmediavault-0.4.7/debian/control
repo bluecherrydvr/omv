@@ -1,0 +1,25 @@
+Source: openmediavault
+Section: web
+Priority:optional
+Maintainer: Bluecherry Maintainers <maintainers@bluecherrydvr.com>
+Build-Depends: debhelper (>= 8.0.0), gettext
+Standards-Version: 3.9.3
+Homepage: http://www.openmediavault.org
+Vcs-Svn: https://openmediavault.svn.sourceforge.net/svnroot/openmediavault
+Vcs-Browser: http://openmediavault.svn.sourceforge.net/viewvc/openmediavault/
+
+Package: openmediavault
+Architecture: all
+Depends: ${misc:Depends}, acpid, anacron, apache2, apache2-suexec, apt-utils,
+ avahi-daemon, beep, bsd-mailx, ca-certificates, collectd, coreutils, 
+ cpufrequtils, cron, cron-apt, gdisk, hdparm, ifupdown, iproute, iptables,
+ jfsutils, libapache2-mod-fcgid, libjavascript-minifier-perl,
+ libjs-extjs (>= 3.4.0), libjson-perl, liblocale-po-perl, libnss-mdns,
+ libsasl2-modules, lvm2, mdadm, monit, nfs-kernel-server, ntfs-3g, ntp,
+ openssh-blacklist-extra, openssh-server, openssl, perl, php5-cgi, postfix,
+ proftpd-basic, quota, quotatool, resolvconf, rrdtool, rsync, rsyslog, samba,
+ samba-common-bin, scponly, sdparm, smartmontools, snmpd, tftpd-hpa, tzdata,
+ uuid, watchdog, wget, whiptail, xfsprogs, xmlstarlet (>= 1.3.1)
+Description: Open network attached storage solution
+ OpenMediaVault is a small and simple to use network attached storage system
+ with a smart WebGUI.

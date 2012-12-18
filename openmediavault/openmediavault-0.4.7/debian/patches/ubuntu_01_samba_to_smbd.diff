@@ -1,0 +1,16 @@
+Index: openmediavault-0.4.7/usr/share/openmediavault/scripts/configimport.d/50samba
+===================================================================
+--- openmediavault-0.4.7.orig/usr/share/openmediavault/scripts/configimport.d/50samba	2012-12-13 14:26:35.741666125 -0600
++++ openmediavault-0.4.7/usr/share/openmediavault/scripts/configimport.d/50samba	2012-12-13 14:31:41.461652084 -0600
+@@ -50,9 +50,9 @@
+ 
+ # Enable/disable service
+ if [ "$(omv_config_get "//services/smb/enable")" = "0" ]; then
+-	update-rc.d samba disable 2>&1
++	update-rc.d smbd disable 2>&1
+ else
+-	update-rc.d samba enable 2>&1
++	update-rc.d smbd enable 2>&1
+ fi
+ 
+ exit 0

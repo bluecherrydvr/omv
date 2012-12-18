@@ -1,0 +1,18 @@
+Source: openmediavault-netatalk
+Section: net
+Priority: optional
+Maintainer: Bluecherry Maintainers <maintainers@bluecherrydvr.com>
+Build-Depends: debhelper (>= 8.0.0), gettext
+Standards-Version: 3.9.3
+Homepage: http://www.openmediavault.org
+Vcs-Svn: https://openmediavault.svn.sourceforge.net/svnroot/openmediavault
+Vcs-Browser: http://openmediavault.svn.sourceforge.net/viewvc/openmediavault/
+
+Package: openmediavault-netatalk
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, openmediavault (>= 0.4.7),
+ netatalk (>= 2.2.1)
+Description: OpenMediaVault netatalk (AppleTalk Protocol Suite) plugin
+ Netatalk is an implementation of the AppleTalk Protocol Suite.
+ .
+ This package provides the netatalk plugin for OpenMediaVault.

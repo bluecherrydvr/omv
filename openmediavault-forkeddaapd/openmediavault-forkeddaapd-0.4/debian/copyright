@@ -1,0 +1,68 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: openmediavault-forkeddaapd
+Source: <url://example.com>
+
+Files: var/www/openmediavault/images/forkeddaapd.png
+Copyright: Tango Desktop Project (http://tango.freedesktop.org)
+License: Public Domain
+ The Tango base icon theme is released to the Public Domain. The palette is in
+ public domain. Developers, feel free to shop it along with your application.
+ The icon naming utilities are licensed under the GPL.
+ .
+ Though the tango-icon-theme package is released to the Public Domain, we ask
+ that you still please attribute the Tango Desktop Project, for all the hard
+ work we've done. Thanks.
+
+Files: *
+Copyright: (C) 2009-2012 Volker Theile <volker.theile@openmediavault.org>
+License: GPL-3
+ OpenMediaVault is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ any later version.
+ .
+ OpenMediaVault is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with OpenMediaVault. If not, see <http://www.gnu.org/licenses/>.
+
+Files: debian/*
+Copyright: 2012 Richard A. Johnson <nixternal@ubuntu.com>
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+Files: debian/*
+Copyright: 2012 Richard A. Johnson <nixternal@ubuntu.com>
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
