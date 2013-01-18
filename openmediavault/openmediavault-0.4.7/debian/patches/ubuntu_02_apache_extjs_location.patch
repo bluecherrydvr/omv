@@ -1,0 +1,13 @@
+Index: openmediavault-0.4.7/usr/share/openmediavault/scripts/apache2
+===================================================================
+--- openmediavault-0.4.7.orig/usr/share/openmediavault/scripts/apache2	2012-12-17 17:32:57.323626695 -0600
++++ openmediavault-0.4.7/usr/share/openmediavault/scripts/apache2	2013-01-15 10:45:28.211803954 -0600
+@@ -50,7 +50,7 @@
+   -o "DocumentRoot ${OMV_DOCUMENTROOT_DIR}" -n \
+   -o "DirectoryIndex index.php" -n \
+   -o "SuexecUserGroup openmediavault openmediavault" -n \
+-  -o "Alias /extjs/ /usr/share/javascript/extjs3/" -n \
++  -o "Alias /extjs/ /usr/share/javascript/extjs/" -n \
+   -o "Alias /images/ ${OMV_DOCUMENTROOT_DIR}/images/" -n \
+   -o "# Set maximum HTTP request length to 25 MiB" -n \
+   -o "FcgidMaxRequestLen 26214400" -n \

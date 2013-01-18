@@ -1,0 +1,101 @@
+#undef PACKAGE_NAME
+#undef PACKAGE_VERSION
+#undef PACKAGE_BUGREPORT
+
+/* Features */
+#undef UNIX_COMPAT
+#undef IRIX_COMPAT
+#undef WINSCP_COMPAT
+#undef GFTP_COMPAT
+#undef SVN_COMPAT
+#undef RSYNC_COMPAT
+#undef QUOTA_COMPAT
+#undef UNISON_COMPAT 
+#undef PASSWD_COMPAT 
+#undef ENABLE_SCP2
+#undef ENABLE_SFTP
+#undef SVNSERV_COMPAT
+#undef ENABLE_WILDCARDS
+#undef RESTRICTIVE_FILENAMES
+#undef CHROOTED_NAME
+#undef CHROOT_CHECKDIR
+#undef HAVE_WORDEXP
+#undef HAVE_GLOB
+#undef HAVE_GETOPT
+#undef HAVE_GETOPT_H
+#undef HAVE_OPTRESET
+
+#undef ENABLE_DEFAULT_CHDIR
+/* cd to this directory after authentication */
+#ifdef ENABLE_DEFAULT_CHDIR
+#undef DEFAULT_CHDIR
+#endif   
+
+/* Binaries launched in sftp compat mode */
+#ifdef ENABLE_SFTP
+#undef PROG_SFTP_SERVER
+#endif
+
+/* Binaries launched by vanilla- and win-SCP modes */
+#ifdef ENABLE_SCP2
+#undef PROG_LS
+#undef PROG_SCP
+#undef PROG_RM
+#undef PROG_LN
+#undef PROG_MV
+#undef PROG_CHMOD
+#undef PROG_CHOWN
+#undef PROG_CHGRP
+#undef PROG_MKDIR
+#undef PROG_RMDIR
+#define PROG_CD "cd"
+#endif /*ENABLE_SCP2*/
+
+/* sftp logging compatibility mode */
+#undef SFTP_LOGGING
+
+#ifdef SFTP_LOGGING
+#define USE_SAFE_ENVIRONMENT
+#endif
+
+/* Binaries launched in WinSCP compatibility mode */
+#ifdef WINSCP_COMPAT
+#undef PROG_PWD
+#undef PROG_GROUPS
+#undef PROG_ID
+#undef PROG_ECHO
+#endif
+
+/* Rsync compatability mode */
+#ifdef RSYNC_COMPAT
+#undef PROG_RSYNC
+#endif
+
+/* Unison compatability mode */
+#ifdef UNISON_COMPAT
+#undef PROG_UNISON
+#ifndef USE_SAFE_ENVIRONMENT
+#define USE_SAFE_ENVIRONMENT
+#endif
+#endif
+
+/* subversion cli compatibility */
+#ifdef SVN_COMPAT 
+#undef PROG_SVN
+#endif
+
+/* subversion svnserv compatibility */
+#ifdef SVNSERV_COMPAT
+#undef PROG_SVNSERV
+#endif
+
+/* passwd compatibility */
+#ifdef PASSWD_COMPAT
+#undef PROG_PASSWD
+#endif
+
+/* quota compatibility */
+#ifdef QUOTA_COMPAT
+#undef PROG_QUOTA
+#endif
+

@@ -1,0 +1,68 @@
+# Turkish translation of scponly debconft template
+# Copyright (C) 2008
+# This file is distributed under the same license as the scponly package.
+# Mert Dirik <mertdirik@gmail.com>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: scponly\n"
+"Report-Msgid-Bugs-To: scponly@packages.debian.org\n"
+"POT-Creation-Date: 2009-07-10 13:16+0000\n"
+"PO-Revision-Date: 2008-06-05 18:10+0200\n"
+"Last-Translator: Mert Dirik <mertdirik@gmail.com>\n"
+"Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Language: Turkish\n"
+
+#. Type: boolean
+#. Description
+#: ../scponly.templates:1001 ../scponly-full.templates:1001
+#, fuzzy
+#| msgid ""
+#| "Install the chrooted binary /usr/sbin/scponlyc and set it to mode 4755 "
+#| "(root.root)?"
+msgid "Install the chrooted binary /usr/sbin/scponlyc SUID root?"
+msgstr ""
+"'chroot'lanmış ikili dosya '/usr/sbin/scponlyc'ye kopyalanıp 4755 (root."
+"root) kipine ayarlansın mı?"
+
+#. Type: boolean
+#. Description
+#: ../scponly.templates:1001 ../scponly-full.templates:1001
+msgid ""
+"If you want scponly to chroot into the user's home directory prior to doing "
+"its work, the scponly binary has to be installed in /usr/sbin/scponlyc and "
+"has to have the suid-root-bit set."
+msgstr ""
+"Eğer 'scponly'nin, işini yapmadan önce, kullanıcının ev dizinine "
+"'chroot'lamasını istiyorsanız, scponly ikili dosyası '/usr/sbin/scponlyc' "
+"yoluna kurulmalı ve suid-root-bit özniteliğine sahip olmalı."
+
+#. Type: boolean
+#. Description
+#: ../scponly.templates:1001 ../scponly-full.templates:1001
+msgid ""
+"This could lead (in the worst case) to a remotely exploitable root hole. If "
+"you don't need the chroot- functionality, don't install the file."
+msgstr ""
+"Bu (en kötü durumda) uzaktan istismar edilebilir bir root güvenlik açığına "
+"yol açabilir. Eğer chroot işlevselliğine ihtiyacınız yoksa bu dosyayı "
+"kurmayın."
+
+#. Type: note
+#. Description
+#: ../scponly-full.templates:2001
+msgid "Potential security hazard"
+msgstr ""
+
+#. Type: note
+#. Description
+#: ../scponly-full.templates:2001
+msgid ""
+"WARNING: this package was compiled with rsync, unison and SVN support, which "
+"can be a potential SECURITY hazard if not configured correctly! Please read "
+"the file /usr/share/doc/scponly-full/SECURITY!"
+msgstr ""

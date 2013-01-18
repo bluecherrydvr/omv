@@ -1,3 +1,17 @@
+openmediavault (0.4.7-2) precise; urgency=low
+
+  * Added following dependencies:
+    - php-json-schema
+    - php5-auth-pam
+    - ethtool
+  * Added 'make-ssl-cert generate-default-snakeoil --force-overwrite' if
+    neither the self-signed certification or key exists on the system already
+  * Added ubuntu_02_apache_extjs_location.patch to look for extjs directory
+    instead of extjs3. This will need to be changed in the future if OMV
+    decides to switch to extjs4
+
+ -- Richard A. Johnson <nixternal@gmail.com>  Fri, 18 Jan 2013 12:12:23 -0600
+
 openmediavault (0.4.7-1) precise; urgency=low
 
   * Initial release

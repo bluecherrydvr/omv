@@ -1,0 +1,6 @@
+scponly source: source-contains-CVS-dir CVS
+scponly source: source-contains-CVS-dir build_extras/CVS
+scponly source: source-contains-CVS-dir build_extras/arch/CVS
+scponly: source-contains-CVS-dir CVS
+scponly: source-contains-CVS-dir build_extras/CVS
+scponly: source-contains-CVS-dir build_extras/arch/CVS

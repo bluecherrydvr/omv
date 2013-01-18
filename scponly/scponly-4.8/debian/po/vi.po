@@ -1,0 +1,67 @@
+# Vietnamese translation for scponly.
+# Copyright © 2010 Free Software Foundation, Inc.
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: scponly 4.8-4.1\n"
+"Report-Msgid-Bugs-To: scponly@packages.debian.org\n"
+"POT-Creation-Date: 2009-07-10 13:16+0000\n"
+"PO-Revision-Date: 2010-02-09 20:17+0930\n"
+"Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
+"Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: LocFactoryEditor 1.8\n"
+
+#. Type: boolean
+#. Description
+#: ../scponly.templates:1001 ../scponly-full.templates:1001
+msgid "Install the chrooted binary /usr/sbin/scponlyc SUID root?"
+msgstr ""
+"Cài đặt tập tin nhị phân đã chroot « /usr/sbin/scponlyc » bằng cách SUID "
+"root ?"
+
+#. Type: boolean
+#. Description
+#: ../scponly.templates:1001 ../scponly-full.templates:1001
+msgid ""
+"If you want scponly to chroot into the user's home directory prior to doing "
+"its work, the scponly binary has to be installed in /usr/sbin/scponlyc and "
+"has to have the suid-root-bit set."
+msgstr ""
+"Nếu bạn muốn scponly chuyển đổi vị trí của thư mục gốc sang thư mục chính "
+"của người dùng (được đợi sống của tiến trình: chroot) trước khi làm việc, "
+"thì tập tin nhị phân scponly cần phải được cài đặt vào « /usr/sbin/scponlyc » "
+"và lập bit « suid-root »."
+
+#. Type: boolean
+#. Description
+#: ../scponly.templates:1001 ../scponly-full.templates:1001
+msgid ""
+"This could lead (in the worst case) to a remotely exploitable root hole. If "
+"you don't need the chroot- functionality, don't install the file."
+msgstr ""
+"Làm như thế có thể rủi ro bảo mật: trong trường hợp xấu nhất, có thể tạo một "
+"lỗ hổng cho phép người khác truy cập từ xa với quyền người chủ. Không cần "
+"chức năng chroot- thì không nên cài đặt tập tin này."
+
+#. Type: note
+#. Description
+#: ../scponly-full.templates:2001
+msgid "Potential security hazard"
+msgstr "Có thể rủi ro bảo mật"
+
+#. Type: note
+#. Description
+#: ../scponly-full.templates:2001
+msgid ""
+"WARNING: this package was compiled with rsync, unison and SVN support, which "
+"can be a potential SECURITY hazard if not configured correctly! Please read "
+"the file /usr/share/doc/scponly-full/SECURITY!"
+msgstr ""
+"CẢNH BÁO — gói phần mềm này đã được biên dịch để hỗ trợ rsync, unison và "
+"SVN, mà có thể rủi ro BẢO MẬT nếu không cấu hình đúng. Hãy đọc tập tin « /usr/"
+"share/doc/scponly-full/SECURITY »."

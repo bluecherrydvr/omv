@@ -1,0 +1,10 @@
+Template: scponly/chroot
+Type: boolean
+Default: false
+_Description: Install the chrooted binary /usr/sbin/scponlyc SUID root?
+ If you want scponly to chroot into the user's home directory prior to
+ doing its work, the scponly binary has to be installed in
+ /usr/sbin/scponlyc and has to have the suid-root-bit set.
+ .
+ This could lead (in the worst case) to a remotely exploitable root hole.
+ If you don't need the chroot- functionality, don't install the file.

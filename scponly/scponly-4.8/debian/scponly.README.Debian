@@ -1,0 +1,25 @@
+scponly for Debian
+------------------
+
+scponly can be operated in 'standard' or chrooted mode.
+The standard scponly binary is located in /usr/bin/scponly.
+The chrooted scponly binary is located in /usr/sbin/scponlyc.
+
+If you want to use the chrooted version of scponly ("scponlyc"),
+you have to create a chroot-jail for the user first; This package
+comes with a script that simplifies the creation of such a user.
+You can find it in /usr/share/doc/scponly/setup_chroot. 
+Then, run 'dpkg-reconfigure scponly', this will set the SUID bit
+on /usr/sbin/scponlyc and inform you about the consequences.
+
+If clients complain about missing groups, compile
+/usr/share/doc/scponly/groups.c and copy the resulting binary
+into /bin/groups in the chroot jail. This should satifsy picky
+scp and sftp clients.
+
+Notes on rsync, unison and SVN support: this has been disabled
+in this package for security reasons. If you absolutely want it,
+install the package "scponly-full" and read the SECURITY file
+contained therein.
+
+ -- Thomas Wana <greuff@debian.org>, Tue, 10 Jul 2009 13:50:48 +0200

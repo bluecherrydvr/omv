@@ -1,0 +1,65 @@
+# Translation of scponly debconf templates to German
+# This file is distributed under the same license as the scponly package.
+#
+# Thomas Mueller <thomas.mueller@tmit.eu>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: scponly_4.8-4_de\n"
+"Report-Msgid-Bugs-To: scponly@packages.debian.org\n"
+"POT-Creation-Date: 2009-07-10 13:16+0000\n"
+"PO-Revision-Date: 2009-09-03 22:53+0200\n"
+"Last-Translator: Thomas Mueller <thomas.mueller@tmit.eu>\n"
+"Language-Team:de <debian-l10n-german@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#. Type: boolean
+#. Description
+#: ../scponly.templates:1001 ../scponly-full.templates:1001
+msgid "Install the chrooted binary /usr/sbin/scponlyc SUID root?"
+msgstr "Chrooted /usr/sbin/scponlyc mit »suid«-root-Rechten installieren?"
+
+#. Type: boolean
+#. Description
+#: ../scponly.templates:1001 ../scponly-full.templates:1001
+msgid ""
+"If you want scponly to chroot into the user's home directory prior to doing "
+"its work, the scponly binary has to be installed in /usr/sbin/scponlyc and "
+"has to have the suid-root-bit set."
+msgstr ""
+"Wenn Sie wollen, dass scponly in das home-Verzeichnis des Benutzers per "
+"chroot wechlset, bevor es seine Arbeit aufnimmt, muss scponly als /usr/sbin/"
+"scponlyc installiert und das »suid«-root-Recht gesetzt werden."
+
+#. Type: boolean
+#. Description
+#: ../scponly.templates:1001 ../scponly-full.templates:1001
+msgid ""
+"This could lead (in the worst case) to a remotely exploitable root hole. If "
+"you don't need the chroot- functionality, don't install the file."
+msgstr ""
+"Dies könnte (im schlimmsten Fall) zu einer Sicherheitslücke führen, die es "
+"einem entfernen Angreifer erlaubt »root«-Rechte zuerlangen. Wenn Sie diese "
+"Funktionalität nicht benötigen, installieren sie diese Datei nicht."
+
+#. Type: note
+#. Description
+#: ../scponly-full.templates:2001
+msgid "Potential security hazard"
+msgstr "Mögliche Gefährdung der Sicherheit"
+
+#. Type: note
+#. Description
+#: ../scponly-full.templates:2001
+msgid ""
+"WARNING: this package was compiled with rsync, unison and SVN support, which "
+"can be a potential SECURITY hazard if not configured correctly! Please read "
+"the file /usr/share/doc/scponly-full/SECURITY!"
+msgstr ""
+"WARNUNG: Dieses Paket wurde mit rsync-, unison- und SVN-Unterstützung "
+"kompiliert, was zu einer möglichen SICHERHEITSGEFAHR führt, falls es nicht "
+"richtig konfiguriert wird! Bitte lesen Sie die Datei /usr/share/scponly-full/"
+"SECURITY!"

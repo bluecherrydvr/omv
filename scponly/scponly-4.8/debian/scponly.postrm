@@ -1,0 +1,26 @@
+#!/bin/sh -e
+
+set -e
+
+case "$1" in
+	purge)
+		dpkg-statoverride --remove /usr/sbin/scponlyc >/dev/null 2>&1 || true
+		;;
+	remove|upgrade|deconfigure)
+      remove-shell /usr/sbin/scponlyc || true
+      remove-shell /usr/bin/scponly || true
+		;;
+	failed-upgrade)
+		;;
+	abort-upgrade)
+		;;
+	*)
+		echo "unknown argument --> $1" >&2
+		exit 0
+		;;
+esac
+
+#DEBHELPER#
+
+# vim:set ts=2:
+# vim:set shiftwidth=2:

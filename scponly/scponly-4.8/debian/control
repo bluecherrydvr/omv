@@ -1,0 +1,38 @@
+Source: scponly
+Section: utils
+Priority: optional
+Maintainer: Bluecherry Maintainers <maintainers@bluecherrydvr.com>
+XSBC-Original-Maintainer: Thomas Wana <greuff@debian.org>
+Build-Depends: debhelper (>= 7), autotools-dev, rsync, unison, subversion, openssh-client
+Standards-Version: 3.8.2.0
+Homepage: http://sublimation.org/scponly/
+
+Package: scponly
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, passwd (>= 1:4.0.3-10), debconf
+Recommends: ssh | openssh-server
+Conflicts: scponly-full
+Description: Restricts the commands available to scp- and sftp-users
+ "scponly" is an alternative 'shell' (of sorts) for system
+ administrators who would like to provide access to remote users to
+ both read and write local files without providing any remote
+ execution priviledges.  Functionally, it is best described as a
+ wrapper to the mostly trusted suite of ssh applications.
+ .
+ This package has, for security reasons, no support for rsync, 
+ unison or svn. If you want that, choose "scponly-full" instead.
+
+Package: scponly-full
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, passwd (>= 1:4.0.3-10), debconf
+Recommends: ssh | openssh-server
+Conflicts: scponly
+Priority: extra
+Description: Restricts the commands available to scp- and sftp-users
+ "scponly" is an alternative 'shell' (of sorts) for system
+ administrators who would like to provide access to remote users to
+ both read and write local files without providing any remote
+ execution priviledges.  Functionally, it is best described as a
+ wrapper to the mostly trusted suite of ssh applications.
+ .
+ This package includes rsync, unison and svn support.

@@ -27,6 +27,13 @@ set -e
 case "$1" in
 	configure)
 		########################################################################
+        # Generate default snakeoil self-signed certificates
+		########################################################################
+        if [ ! -f /etc/ssl/certs/ssl-cert-snakeoil.pem ] || [ -f /etc/ssl/private/ssl-cert-snakeoil.key ]; then
+            make-ssl-cert generate-default-snakeoil --force-overwrite
+        fi
+
+		########################################################################
 		# Set the default settings to those expected by OpenMediaVault.
 		########################################################################
 		if [ -z "$2" ]; then

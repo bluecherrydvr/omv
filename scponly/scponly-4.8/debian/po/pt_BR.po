@@ -1,0 +1,74 @@
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+#    Developers do not need to manually edit POT or PO files.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: scponly\n"
+"Report-Msgid-Bugs-To: scponly@packages.debian.org\n"
+"POT-Creation-Date: 2009-07-10 13:16+0000\n"
+"PO-Revision-Date: 2004-11-02 12:12-0300\n"
+"Last-Translator: André Luís Lopes <andrelop@debian.org>\n"
+"Language-Team: Debian-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../scponly.templates:1001 ../scponly-full.templates:1001
+#, fuzzy
+#| msgid ""
+#| "Install the chrooted binary /usr/sbin/scponlyc and set it to mode 4755 "
+#| "(root.root)?"
+msgid "Install the chrooted binary /usr/sbin/scponlyc SUID root?"
+msgstr ""
+"Instalar o binário /usr/sbin/scponlyc em chroot e definir seu modo para 4755 "
+"(root.root) ?"
+
+#. Type: boolean
+#. Description
+#: ../scponly.templates:1001 ../scponly-full.templates:1001
+msgid ""
+"If you want scponly to chroot into the user's home directory prior to doing "
+"its work, the scponly binary has to be installed in /usr/sbin/scponlyc and "
+"has to have the suid-root-bit set."
+msgstr ""
+"Caso você deseje que o scponly utilize o diretório pessoal do usuário como "
+"um chroot antes que fazer seu serviço, o binário do scponly deve ser "
+"instalado em /usr/sbin/scponlyc e deve ter o bit SUID root ligado."
+
+#. Type: boolean
+#. Description
+#: ../scponly.templates:1001 ../scponly-full.templates:1001
+msgid ""
+"This could lead (in the worst case) to a remotely exploitable root hole. If "
+"you don't need the chroot- functionality, don't install the file."
+msgstr ""
+"Isso pode levar (no pior dos casos) a uma falha explorável remotamente, a "
+"qual pode fornecer privilégios de root ao atacante. Caso você não precise da "
+"funcionalidade de chroot, não instale o arquivo."
+
+#. Type: note
+#. Description
+#: ../scponly-full.templates:2001
+msgid "Potential security hazard"
+msgstr ""
+
+#. Type: note
+#. Description
+#: ../scponly-full.templates:2001
+msgid ""
+"WARNING: this package was compiled with rsync, unison and SVN support, which "
+"can be a potential SECURITY hazard if not configured correctly! Please read "
+"the file /usr/share/doc/scponly-full/SECURITY!"
+msgstr ""

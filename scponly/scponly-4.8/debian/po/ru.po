@@ -1,0 +1,69 @@
+# translation of ru.po to Russian
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Yuri Kozlov <kozlov.y@gmail.com>, 2008.
+# Yuri Kozlov <yuray@komyakino.ru>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: scponly 4.8-3\n"
+"Report-Msgid-Bugs-To: scponly@packages.debian.org\n"
+"POT-Creation-Date: 2009-07-10 13:16+0000\n"
+"PO-Revision-Date: 2009-07-15 22:06+0400\n"
+"Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
+"Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. Type: boolean
+#. Description
+#: ../scponly.templates:1001 ../scponly-full.templates:1001
+msgid "Install the chrooted binary /usr/sbin/scponlyc SUID root?"
+msgstr ""
+"Установить на исполняемый файл /usr/sbin/scponlyc (принадлежит root) бит "
+"SUID?"
+
+#. Type: boolean
+#. Description
+#: ../scponly.templates:1001 ../scponly-full.templates:1001
+msgid ""
+"If you want scponly to chroot into the user's home directory prior to doing "
+"its work, the scponly binary has to be installed in /usr/sbin/scponlyc and "
+"has to have the suid-root-bit set."
+msgstr ""
+"Если вы хотите, чтобы scponly выполнял chroot в домашний каталог "
+"пользователя перед тем как работать, то исполняемый файл scponly должен быть "
+"установлен в /usr/sbin/scponlyc с установленным suid-root-битом."
+
+#. Type: boolean
+#. Description
+#: ../scponly.templates:1001 ../scponly-full.templates:1001
+msgid ""
+"This could lead (in the worst case) to a remotely exploitable root hole. If "
+"you don't need the chroot- functionality, don't install the file."
+msgstr ""
+"Это может привести (в худшем случае) к уязвимости в безопасности с "
+"возможностью удалённого использования. Если вам не нужна функциональность "
+"chroot, не устанавливайте файл."
+
+#. Type: note
+#. Description
+#: ../scponly-full.templates:2001
+msgid "Potential security hazard"
+msgstr "Возможная угроза безопасности"
+
+#. Type: note
+#. Description
+#: ../scponly-full.templates:2001
+msgid ""
+"WARNING: this package was compiled with rsync, unison and SVN support, which "
+"can be a potential SECURITY hazard if not configured correctly! Please read "
+"the file /usr/share/doc/scponly-full/SECURITY!"
+msgstr ""
+"ПРЕДУПРЕЖДЕНИЕ: данный пакет собран с поддержкой rsync, unison и SVN, "
+"которые при неправильной настройке могут создать угрозу безопасности! "
+"Прочтите файл /usr/share/doc/scponly-full/SECURITY!"
+
